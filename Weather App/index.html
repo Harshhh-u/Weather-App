@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    
+</head>
+<body>
+    <div id="main-container">
+        
+            <h1>Check the weather!!</h1>
+            <form id="search">
+                <input type="text" id="InputField" placeholder="Enter city name" spellcheck="false">
+                <button id="SubmitBtn"class="ri-search-2-line" ></button>
+            </form>
+            <div id="error-parsing">
+                <!-- Error parsing the response, When the  ity name is wrong-->
+                 <p>Invalid city name!!!</p>
+            </div>
+            <div id="weather">
+                <img src="png/clear.png" alt="" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h3 class="desc">Clear</h3>
+                <h3 class="city-name">Delhi</h3>
+            </div>
+            <div id="details">
+                <div id="column">
+                    <img src="png/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">35%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div id="column">
+                    <img src="png/wind.png" alt="">
+                    <div>
+                        <p class="Wind">15 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
